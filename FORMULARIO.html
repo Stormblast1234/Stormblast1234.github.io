@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>formulario</title>
+    <link rel="stylesheet" href="Stylef.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Registro</h2>
+<form action="https://formspree.io/f/meqywreo" method="post">
+
+    <div class="form-group">
+        <label for="nombre">Nombres</label>
+        <input class="controls" type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input class="controls" type="text" placeholder="Ingresa tus apellidos" id="apellidos" name="apellidos" required>
+    </div>
+
+    <div class="form-group">
+        <label for="correo electrónico">Correo electrónico</label>
+        <input class="controls" type="email" placeholder="Ingresa tu correo" id="correo electronico" name="correo electronico" required>
+    </div>
+
+    <div class="form-group">
+        <label for="Opciones">Selecciona tu rol</label>
+        <select class="controls" id="Opciones" name="Opciones[]" required>
+            <option class="Elige" aria-placeholder="Elige tu rol" value="Ninguno"></option>
+            <option value="Aprendiz SENA">Aprendiz SENA</option>
+            <option value="Intructor SENA">Instructor SENA</option>
+            <option value="Docente">Docente</option>
+            <option value="Directivo docente">Directivo docente</option>
+            <option value="Directivo SENA">Directivo SENA</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="direccion">Ingresa tu mensaje</label>
+        <textarea class="controls" id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los terminos y condiciones</label>
+    </div>
+
+    <button class="buttons" type="submit">Enviar información</button>
+    <button class="buttons" id="end"><a href="INDEX.html">Regresar</a></button>
+    </div>
+</form>
+</body>
+</html>
